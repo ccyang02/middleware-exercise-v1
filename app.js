@@ -7,6 +7,9 @@ require('console-stamp')(console, {
 });
 
 app.use(function (req, res, next) {
+  if (req.originalUrl.includes('favicon.ico')) {
+    return res.status(204).end()
+  }
   console.log(`${req.method} from ${req.originalUrl}`)
   next()
 })
