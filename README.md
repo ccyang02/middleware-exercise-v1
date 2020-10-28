@@ -17,7 +17,7 @@ cd middleware-exercise-v1
 npm install
 ```
 
-- Run project
+- Run project 
 
 ```
 npm run dev
